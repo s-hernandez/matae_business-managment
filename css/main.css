@@ -173,8 +173,25 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    margin: 1em;
+    text-align: center;
+    background-color: #000;
+    color: #FFFFFF
+}
+
+h4 {
+    color: #000;
+    background-color: #66CCFF;
+    text-align: center;
+}
+
 p {
     color: #33CCFF;
+}
+
+.colouR {
+    color: #000;
 }
 
 .backcolor {
@@ -246,7 +263,7 @@ input[type="email"]:focus {
 
 figure {
   margin: 0;
-  position: relative;
+  position:relative;
   bottom: 0;
   padding: 0;
   width: 100%;
@@ -256,7 +273,7 @@ figcaption {
     text-align: left;
     width: 100%;
     font-size: .9rem;
-    color:  #33CCFF;
+    color:  #FFFFFF;
 }
 
 
