@@ -196,6 +196,8 @@ button {
     font-family: Helvetica;
     float: center;
     margin: 4em;
+    border-radius: 2em;
+    background-color: #33CCCC;
 }
 
 button:hover {
@@ -205,7 +207,7 @@ button:hover {
 }
 
 button:active {
-    background-color: lightgrey;
+    background-color: #33CCCC;
 }
 
 .box,
