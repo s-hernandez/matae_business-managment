@@ -136,7 +136,9 @@ figure {
     display: block;
     width: 16rem;
     height: 50px;
-    margin: .8em;
+    margin-top: .8em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -154,7 +156,7 @@ img {
     overflow: hidden;
     border-bottom: .8rem solid black;
     width: 100%;
-    height: 38em;;
+    height: 38em;
 }
 
 .border {
@@ -311,7 +313,6 @@ figcaption {
     .copyright {
     text-align: center;
     }
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -336,6 +337,10 @@ figcaption {
     
      .bigp {
         padding-right: 1.5rem;
+    }
+    
+    .logo {
+        float: left;
     }
     
     .copyright {
