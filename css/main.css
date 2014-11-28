@@ -77,15 +77,6 @@ img {
   display: block;
   width: 100%;
 }
-    
-.nav {
-    list-style-type: none;
-    padding-top: 1.5em;
-}
-
-.nav-bottom {
-    float: center;
-}
 
 .gutter {
     padding-left: 1em;
@@ -109,6 +100,8 @@ figure {
 .nav {
   letter-spacing: -0.31em;
   text-rendering: optimizespeed;
+  list-style-type: none;
+  padding-top: 1.5em;
 }
 
 .nav li {
@@ -129,6 +122,10 @@ figure {
 .nav .nav-current:visited {
     color: #330099;
     background-color: #F0F0F0;
+}
+
+.nav-bottom {
+    float: center;
 }
 
 .logo {
@@ -299,6 +296,19 @@ figcaption {
     color:  #000;
 }
 
+.nav-footer a, 
+.nav-footer a:link, 
+.nav-footer a:visited {
+    display: block;
+    color: #33CCFF;
+    border-radius: .3em;
+}
+
+.nav-footer:hover {
+    background-color: teal;
+    color: #fff;
+}
+
 
 @media only screen and (min-width: 25em) {
     
@@ -311,6 +321,10 @@ figcaption {
         
     .copyright {
     text-align: center;
+    }
+    
+    .nav-footer {
+        float: center;
     }
 }
 
