@@ -103,7 +103,6 @@ figure {
 .top-bar {
     background-color: #FFF;
     overflow: hidden;
-    position: fixed;
     width: 100%;
 }
 
