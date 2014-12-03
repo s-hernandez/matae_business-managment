@@ -95,13 +95,14 @@ figure {
     background-color: #FFF;
     overflow: hidden;
     width: 100%;
+    padding-top: 1.5em;
 }
 
 .nav {
-  letter-spacing: -0.31em;
+  letter-spacing: .5em;
   text-rendering: optimizespeed;
   list-style-type: none;
-  padding-top: 1.5em;
+  border-radius: .2em; 
 }
 
 .nav li {
@@ -114,13 +115,14 @@ figure {
     text-decoration: none;
     color: #33CCFF;
     float: right;
+    border-radius: .3em;
 }
 
 .nav a:hover,
 .nav .nav-current,
 .nav .nav-current:link,
 .nav .nav-current:visited {
-    color: #330099;
+    color: #000099;
     background-color: #F0F0F0;
 }
 
@@ -177,10 +179,11 @@ h1 {
     font-weight: normal;
     letter-spacing: 0;
     width: 100%;
+    float: center;
 }
 
 h2 {
-    color: #000;
+    color: #33CCFF;
     text-align: center;
 }
 
@@ -198,14 +201,10 @@ h4 {
 }
 
 p {
-    color: #33CCFF;
-}
-
-.font {
     color: #000;
 }
 
-.colouR {
+.colourone {
     color: #000;
 }
 
@@ -230,26 +229,23 @@ button {
     margin: .5em;
     border-radius: .3em;
     background-color: #FFF;
+    transition:  all 0.3s ease 0s;
 }
 
 button:hover {
     background-color: #33CCFF;
     cursor: pointer;
-    color: #0033FF;
+    color: #33CCFF;
 }
 
 button:active {
-    background-color: #33CCCC;
-}
-
-bigb {
-    font-size: 2em;
-    background-color: #00CC33; 
+    background-color: #33CCFF;
+    color: #000;
 }
 
 .box,
 .boxsize {
-    border: 1px solid  #D1D0CE;
+    border: 1px solid #D1D0CE;
     border-radius: 3px;
     font-size: 1.125em;
     font-family: serif;
@@ -296,19 +292,41 @@ figcaption {
     color:  #000;
 }
 
+.square {
+    margin: 3em;
+}
+
+.face {
+    background-image: url(../images/facebook-01.svg);  
+}
+
+.twit {
+    background-image: url(../images/twitter-01.svg);
+}
+
+.inst {
+    background-image: url(../images/instagram-01.svg);
+}
+
+bucket {
+    margin: 1em;
+    padding: 1em;
+}
+
+.backgroundcolor {
+    background: #F8F8F8;
+    float: center;
+}
+
 .nav-footer a, 
 .nav-footer a:link, 
 .nav-footer a:visited {
     display: block;
     color: #33CCFF;
-    border-radius: .3em;
+    border-radius: 1em;
+    margin: .5em;
+    padding: 1em;
 }
-
-.nav-footer:hover {
-    background-color: teal;
-    color: #fff;
-}
-
 
 @media only screen and (min-width: 25em) {
     
@@ -326,6 +344,15 @@ figcaption {
     .nav-footer {
         float: center;
     }
+    
+    .second-img {
+        float: left;
+        width: 50%;
+    }
+    
+    .first-img figcaption {
+        position: absolute;
+    }
 }
 
 @media only screen and (min-width: 38em) {
@@ -337,11 +364,6 @@ figcaption {
     
     .nav-footer {
         float: right;
-    }
-    
-    h1 {
-        float: left;
-        margin: 0;
     }
     
    .top-bar{
@@ -359,6 +381,19 @@ figcaption {
     .copyright {
     text-align: left;
     }
+    
+    .second-img {
+        width: 33.3333%;
+    }
+    
+    .first-img {
+        float: left;
+        width: 33.3333%;
+    }
+    
+     .first-img figcaption {
+        position: static;
+    }
 }
     
 @media only screen and (min-width: 60em) {
@@ -371,8 +406,11 @@ figcaption {
         float: right;
     }
     
-    .datalist dt {
-        width: 12em;
-        float: left;
-    } 
+    .second-img figcaption {
+        position: absolute;
+    }
+    
+    .first-img figcaption {
+        position: absolute;
+    }
 }
