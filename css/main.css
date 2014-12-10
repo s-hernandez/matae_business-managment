@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
   font: normal 100%/1.5 sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -206,8 +206,7 @@ h2 {
 h3 {
     margin: 1em;
     text-align: center;
-    background-color: #000;
-    color: #FFFFFF;
+    color: #000;
 }
 
 h4 {
@@ -217,11 +216,20 @@ h4 {
 }
 
 h5 {
-    color: #fff;
+    color: #FFF;
+    text-shadow: .5px .5px 1px #000;
 }
 
 p {
     color: #000;
+}
+
+.textcolor {
+    color: yellow;
+}
+
+.text {
+    color: #FFF;
 }
 
 .colourone {
@@ -309,7 +317,7 @@ figcaption {
     text-align: left;
     width: 100%;
     font-size: .9rem;
-    color:  #000;
+    color: #000;
 }
 
 .square {
@@ -317,7 +325,7 @@ figcaption {
 }
 
 .face {
-    background-image: url(../images/facebook-01.svg); 
+    background-image: url(../images/facebook-01.svg);
 }
 
 .twit {
@@ -330,9 +338,7 @@ figcaption {
 
 .bucket {
     margin: 1em;
-    height: 1em;
     list-style: none;
-    float: left;
 }
 
 .bucket a {
@@ -344,16 +350,26 @@ figcaption {
     position: relative;
 }
 
+.bucket ul li {
+    float: left;
+}
+
 .backgroundcolor {
     background: #F8F8F8;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .price-wrapper {
-    background-color: #66CCFF;
+    background-color: #0066CC;
     border-radius: 2em;
-    padding: 2em;
+    box-shadow: 2px 2px 9px #888888;
+}
+
+.form-wrapper {
+    background-color: #0066CC;
+    border-radius: 2em;
+    box-shadow: 2px 2px 9px #888888;
+    width: 30em;
 }
 
 .nav-footer a, 
@@ -403,6 +419,10 @@ footer {
         margin-right: auto;
     }
     
+    .form-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }   
 }
 
 @media only screen and (min-width: 30em) {
@@ -416,6 +436,11 @@ footer {
         float: left;
         width: 50%;
     }
+    
+    .form-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    } 
 }
 
 @media only screen and (min-width: 38em) {
