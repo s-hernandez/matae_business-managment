@@ -35,6 +35,7 @@ html {
 }
 
 *, *:before, *:after {
+    box-sizing: border-box;
 }
   
 body {
@@ -98,6 +99,10 @@ figure {
     padding-top: 1.5em;
 }
 
+header {
+    
+}
+
 .nav {
   letter-spacing: .5em;
   text-rendering: optimizespeed;
@@ -145,17 +150,17 @@ img {
 }
 
 .masthead {
-    margin: auto;
+    margin: 0;
     background-image: url(../images/background.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: top;
     background-color: black;
     overflow: hidden;
-    border-bottom: .8rem solid black;
     width: 100%;
     height: 38em;
     padding-top: 20rem;
+    box-shadow: 2px 2px 9px #888888;
 }
 
 .border {
@@ -176,11 +181,21 @@ img {
 }
 
 h1 {
-    background-color: rgba(248, 248, 248, .7);
     font-weight: normal;
     letter-spacing: 0;
     width: 100%;
     float: center;
+    color: #fff;
+}
+
+.head-quote{
+    font-size: 1.2em;
+    text-shadow: 0px 2px 2px;
+    color: #fff;
+}
+
+.h-wrapper {
+    background-color: rgba(0,0,0,0.5);
 }
 
 h2 {
@@ -199,6 +214,10 @@ h4 {
     color: #000;
     background-color: #66CCFF;
     text-align: center;
+}
+
+h5 {
+    color: #fff;
 }
 
 p {
@@ -313,6 +332,7 @@ figcaption {
     margin: 1em;
     height: 1em;
     list-style: none;
+    float: left;
 }
 
 .bucket a {
@@ -321,21 +341,34 @@ figcaption {
     height: 30px;
     overflow: hidden;
     text-indent: 100%;
+    position: relative;
 }
 
 .backgroundcolor {
     background: #F8F8F8;
-    float: center;
+    width: 100%;
+    
+}
+
+.price-wrapper {
+    background-color: #66CCFF;
+    border-radius: 2em;
+    padding: 2em;
 }
 
 .nav-footer a, 
 .nav-footer a:link, 
 .nav-footer a:visited {
-    display: block;
     color: #33CCFF;
-    border-radius: 1em;
+    border-radius: .5em;
     margin: .5em;
-    padding: 1em;
+    padding: 0em;
+    display: inline-block;
+    float: left
+}
+
+footer {
+    clear: left;
 }
 
 @media only screen and (min-width: 25em) {
@@ -362,6 +395,26 @@ figcaption {
     
     .first-img figcaption {
         position: absolute;
+    }
+    
+    .price-wrapper {
+        width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 30em) {
+
+    .align-right {
+        float: right;
+        width: 50%;
+    }
+    
+    .align-left {
+        float: left;
+        width: 50%;
     }
 }
 
@@ -404,6 +457,7 @@ figcaption {
      .first-img figcaption {
         position: static;
     }
+    
 }
     
 @media only screen and (min-width: 60em) {
