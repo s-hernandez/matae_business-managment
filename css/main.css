@@ -435,6 +435,7 @@ footer {
     .align-left {
         float: left;
         width: 50%;
+        margin-left: auto;
     }
     
     .form-wrapper {
